@@ -30,7 +30,7 @@ export default function Home() {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 mb-4 sm:mb-6 leading-tight"
           >
             Welcome to <br className="sm:hidden" />
-            <span className="text-blue-600">TechBit Coding Club</span>
+            <span className="text-blue-600">GFGCOE Coding Club</span>
           </motion.h1>
 
           <motion.p

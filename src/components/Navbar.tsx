@@ -38,7 +38,7 @@ export default function Navbar() {
           to="/"
           className="text-2xl font-bold text-[rgb(var(--primary-rgb))] hover:text-[rgb(var(--primary-hover-rgb))] transition-colors"
         >
-          TechBit Coding Club
+          GFGCOE Coding Club
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
