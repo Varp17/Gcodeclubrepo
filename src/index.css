@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Google Cloud Colors (RGB values for compatibility) */
+  --foreground-rgb: 32, 33, 36;        /* #202124 - Dark charcoal */
+  --background-start-rgb: 255, 255, 255; /* Pure white */
+  --background-end-rgb: 248, 249, 250;   /* #F8F9FA - Very light gray */
+  --card-background: 255, 255, 255;      /* Pure white cards */
+
+  /* Google Blue Primary */
+  --primary-rgb: 66, 133, 244;           /* #4285F4 */
+  --primary-hover-rgb: 51, 103, 214;     /* #3367D6 */
+
+   /* Text Hierarchy - all black */
+ --text-secondary-rgb: 95, 99, 104;     /* #5F6368 */
+--text-muted-rgb: 154, 160, 166;       /* #9AA0A6 */
+
+  /* Borders */
+  --border-rgb: 232, 234, 237;           /* #E8EAED */
+  --border-muted-rgb: 218, 220, 224;     /* #DADCE0 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;     /* #E8EAED */
+    --background-start-rgb: 32, 33, 36;   /* #202124 */
+    --background-end-rgb: 48, 49, 52;     /* #303134 */
+    --card-background: 48, 49, 52;        /* #303134 */
+    --primary-rgb: 138, 180, 248;         /* #8AB4F8 - Lighter blue for dark mode */
+    --text-secondary-rgb: 0, 0, 0;  /* #9AA0A6 */
+    --border-rgb: 95, 99, 104;            /* #5F6368 */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  font-family: var(--font-body);
+}
+
+@layer utilities {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .section {
+    @apply py-[var(--spacing-section)];
+  }
+
+  /* Updated card with Google Cloud styling */
+  .card {
+    @apply bg-[rgb(var(--card-background))] rounded-lg shadow-sm hover:shadow-md
+           p-8 border border-[rgb(var(--border-rgb))] transition-all duration-300
+           hover:-translate-y-1;
+  }
+
+  /* Updated button with Google Blue */
+  .button {
+    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300
+           hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  /* Primary button style */
+  .bg-primary {
+    @apply bg-[rgb(var(--primary-rgb))] hover:bg-[rgb(var(--primary-hover-rgb))];
+  }
+
+  .text-primary {
+    @apply text-[rgb(var(--primary-rgb))];
+  }
+
+  .border-primary {
+    @apply border-[rgb(var(--primary-rgb))];
+  }
+
+  /* Secondary text colors */
+  .text-secondary {
+    @apply text-[rgb(var(--text-secondary-rgb))];
+  }
+
+  .text-muted {
+    @apply text-[rgb(var(--text-muted-rgb))];
+  }
+
+  /* Updated badge */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium
+           bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300;
+  }
+
+  /* Updated skeleton with Google colors */
+  .skeleton {
+    @apply bg-gray-100 dark:bg-gray-800 animate-shimmer bg-[length:200%_100%];
+    background-image: linear-gradient(
+      90deg,
+      rgba(66, 133, 244, 0) 0%,
+      rgba(66, 133, 244, 0.1) 20%,
+      rgba(66, 133, 244, 0.2) 60%,
+      rgba(66, 133, 244, 0)
+    );
+  }
+
+  /* Updated glass effect */
+  .glass {
+    @apply bg-white/90 dark:bg-gray-900/80 backdrop-blur-md
+           border border-[rgb(var(--border-rgb))]/20
+           dark:border-gray-700/30;
+  }
+
+  /* Hover effects for primary buttons */
+  .hover\:bg-primary\/80:hover {
+    @apply bg-[rgb(var(--primary-hover-rgb))];
+  }
+
+  .hover\:bg-primary\/10:hover {
+    background-color: rgb(var(--primary-rgb), 0.1);
+  }
+}

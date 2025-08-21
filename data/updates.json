@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "AI & ML Workshop",
+    "date": "August 15, 2025",
+    "description": "Join our upcoming workshop on deep learning with TensorFlow and PyTorch. Limited seats!"
+  },
+  {
+    "id": "2",
+    "title": "Hackathon 2025",
+    "date": "July 20, 2025",
+    "description": "Participate in our annual hackathon and showcase your skills in a 24-hour coding challenge."
+  },
+  {
+    "id": "3",
+    "title": "New Member Orientation",
+    "date": "June 10, 2025",
+    "description": "Welcome new members with an orientation session and project showcase."
+  },
+  {
+    "id": "4",
+    "title": "MERN Stack Bootcamp",
+    "date": "May 5, 2025",
+    "description": "Learn full-stack development with our intensive MERN Stack bootcamp."
+  }
+]

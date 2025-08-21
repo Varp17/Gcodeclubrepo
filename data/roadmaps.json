@@ -1,0 +1,122 @@
+[
+  {
+    "groupId": "ai-ml",
+    "steps": [
+      {
+        "id": "1",
+        "title": "Python Basics",
+        "description": "Learn Python syntax, data structures, and basic programming concepts."
+      },
+      {
+        "id": "2",
+        "title": "NumPy & Pandas",
+        "description": "Master numerical computing and data manipulation with NumPy and Pandas."
+      },
+      {
+        "id": "3",
+        "title": "Machine Learning",
+        "description": "Understand supervised and unsupervised learning with Scikit-learn."
+      },
+      {
+        "id": "4",
+        "title": "Deep Learning",
+        "description": "Dive into neural networks using TensorFlow and PyTorch."
+      },
+      {
+        "id": "5",
+        "title": "NLP & Computer Vision",
+        "description": "Explore natural language processing and computer vision applications."
+      }
+    ]
+  },
+  {
+    "groupId": "data-science",
+    "steps": [
+      {
+        "id": "1",
+        "title": "Statistics Fundamentals",
+        "description": "Learn probability, distributions, and statistical inference."
+      },
+      {
+        "id": "2",
+        "title": "Python for Data Analysis",
+        "description": "Use Python libraries like Pandas and Matplotlib for data analysis."
+      },
+      {
+        "id": "3",
+        "title": "Data Visualization",
+        "description": "Create insightful visualizations with Seaborn and Plotly."
+      },
+      {
+        "id": "4",
+        "title": "Predictive Modeling",
+        "description": "Build predictive models using regression and classification techniques."
+      },
+      {
+        "id": "5",
+        "title": "Big Data Tools",
+        "description": "Explore big data technologies like Spark and Hadoop."
+      }
+    ]
+  },
+  {
+    "groupId": "java-microservices",
+    "steps": [
+      {
+        "id": "1",
+        "title": "Java Core",
+        "description": "Master Java fundamentals, OOP, and collections."
+      },
+      {
+        "id": "2",
+        "title": "Spring Framework",
+        "description": "Learn Spring Core, Spring MVC, and dependency injection."
+      },
+      {
+        "id": "3",
+        "title": "Spring Boot",
+        "description": "Build RESTful APIs and microservices with Spring Boot."
+      },
+      {
+        "id": "4",
+        "title": "Microservices Architecture",
+        "description": "Understand microservices patterns and best practices."
+      },
+      {
+        "id": "5",
+        "title": "Cloud Deployment",
+        "description": "Deploy microservices on cloud platforms like AWS or Docker."
+      }
+    ]
+  },
+  {
+    "groupId": "mern-stack",
+    "steps": [
+      {
+        "id": "1",
+        "title": "JavaScript & Node.js",
+        "description": "Learn modern JavaScript and Node.js for backend development."
+      },
+      {
+        "id": "2",
+        "title": "Express.js",
+        "description": "Build RESTful APIs with Express.js and middleware."
+      },
+      {
+        "id": "3",
+        "title": "React",
+        "description": "Create dynamic frontends with React and component-based architecture."
+      },
+      {
+        "id": "4",
+        "title": "MongoDB",
+        "description": "Work with NoSQL databases using MongoDB and Mongoose."
+      },
+      {
+        "id": "5",
+        "title": "Full-Stack Integration",
+        "description": "Integrate MERN stack components for full-stack applications."
+      }
+    ]
+  }
+]

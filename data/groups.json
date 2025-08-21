@@ -1,0 +1,191 @@
+[
+  {
+    "id": "aiml",
+    "name": "AI & ML Group",
+    "description": "Learn artificial intelligence and machine learning, from Python basics to deep learning projects.",
+    "mentors": [
+      {
+        "name": "Dr. Neha Sharma",
+        "role": "Faculty Mentor",
+        "linkedin": "https://linkedin.com/in/neha-sharma",
+        "photo": "/images/neha.jpg"
+      }
+    ],
+    "coLeads": [
+      {
+        "name": "Rohan Mehta",
+        "linkedin": "https://linkedin.com/in/rohan-mehta",
+        "photo": "/images/rohan.jpg"
+      },
+      {
+        "name": "Priya Kapoor",
+        "linkedin": "https://linkedin.com/in/priya-kapoor",
+        "photo": "/images/priya.jpg"
+      }
+    ],
+    "roadmap": [
+      "Python Fundamentals",
+      "NumPy & Pandas",
+      "Data Visualization",
+      "Machine Learning Basics",
+      "Deep Learning & Neural Networks",
+      "AI Projects"
+    ],
+    "resources": [
+      {
+        "title": "ML with Python (Coursera)",
+        "link": "https://coursera.org/ml"
+      },
+      {
+        "title": "Fast.ai",
+        "link": "https://course.fast.ai/"
+      },
+      {
+        "title": "scikit-learn Docs",
+        "link": "https://scikit-learn.org/stable/"
+      }
+    ],
+    "banner": "https://images.unsplash.com/photo-1516321310762-37e87c02ce92?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80"
+  },
+  {
+    "id": "data-science",
+    "name": "Data Science Group",
+    "description": "Dive into data analysis, visualization, and predictive modeling using Python, R, and advanced statistical techniques.",
+    "mentors": [
+      {
+        "name": "Dr. Vikram Singh",
+        "role": "Faculty Mentor",
+        "linkedin": "https://linkedin.com/in/vikram-singh",
+        "photo": "/images/vikram.jpg"
+      }
+    ],
+    "coLeads": [
+      {
+        "name": "Ananya Roy",
+        "linkedin": "https://linkedin.com/in/ananya-roy",
+        "photo": "/images/ananya.jpg"
+      },
+      {
+        "name": "Karan Patel",
+        "linkedin": "https://linkedin.com/in/karan-patel",
+        "photo": "/images/karan.jpg"
+      }
+    ],
+    "roadmap": [
+      "Statistics Fundamentals",
+      "Python for Data Analysis",
+      "Data Visualization",
+      "Predictive Modeling",
+      "Big Data Tools"
+    ],
+    "resources": [
+      {
+        "title": "DataCamp Tutorials",
+        "link": "https://www.datacamp.com/"
+      },
+      {
+        "title": "Python for Data Science",
+        "link": "https://www.kaggle.com/learn/python"
+      },
+      {
+        "title": "Tableau Guide",
+        "link": "https://www.tableau.com/learn"
+      }
+    ],
+    "banner": "https://images.unsplash.com/photo-1551288049-b1f3c0e3e71a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80"
+  },
+  {
+    "id": "java-microservices",
+    "name": "Java Microservices Group",
+    "description": "Build scalable, modular applications with Java, Spring Boot, and microservices architecture for enterprise solutions.",
+    "mentors": [
+      {
+        "name": "Dr. Amit Gupta",
+        "role": "Faculty Mentor",
+        "linkedin": "https://linkedin.com/in/amit-gupta",
+        "photo": "/images/amit.jpg"
+      }
+    ],
+    "coLeads": [
+      {
+        "name": "Sneha Verma",
+        "linkedin": "https://linkedin.com/in/sneha-verma",
+        "photo": "/images/sneha.jpg"
+      },
+      {
+        "name": "Rahul Sharma",
+        "linkedin": "https://linkedin.com/in/rahul-sharma",
+        "photo": "/images/rahul.jpg"
+      }
+    ],
+    "roadmap": [
+      "Java Core",
+      "Spring Framework",
+      "Spring Boot",
+      "Microservices Architecture",
+      "Cloud Deployment"
+    ],
+    "resources": [
+      {
+        "title": "Spring Boot Guide",
+        "link": "https://spring.io/guides"
+      },
+      {
+        "title": "Microservices Patterns",
+        "link": "https://microservices.io/"
+      },
+      {
+        "title": "AWS Java SDK",
+        "link": "https://aws.amazon.com/sdk-for-java/"
+      }
+    ],
+    "banner": "https://images.unsplash.com/photo-1516321310762-37e87c02ce92?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80"
+  },
+  {
+    "id": "mern-stack",
+    "name": "MERN Stack Group",
+    "description": "Create full-stack web applications using MongoDB, Express.js, React, and Node.js with modern JavaScript practices.",
+    "mentors": [
+      {
+        "name": "Dr. Priyanka Desai",
+        "role": "Faculty Mentor",
+        "linkedin": "https://linkedin.com/in/priyanka-desai",
+        "photo": "/images/priyanka.jpg"
+      }
+    ],
+    "coLeads": [
+      {
+        "name": "Vikash Yadav",
+        "linkedin": "https://linkedin.com/in/vikash-yadav",
+        "photo": "/images/vikash.jpg"
+      },
+      {
+        "name": "Nisha Reddy",
+        "linkedin": "https://linkedin.com/in/nisha-reddy",
+        "photo": "/images/nisha.jpg"
+      }
+    ],
+    "roadmap": [
+      "JavaScript & Node.js",
+      "Express.js",
+      "React",
+      "MongoDB",
+      "Full-Stack Integration"
+    ],
+    "resources": [
+      {
+        "title": "React Documentation",
+        "link": "https://reactjs.org/docs"
+      },
+      {
+        "title": "MongoDB University",
+        "link": "https://university.mongodb.com/"
+      },
+      {
+        "title": "Node.js Guide",
+        "link": "https://nodejs.org/en/docs/"
+      }
+    ],
+    "banner": "https://images.unsplash.com/photo-1593642532973-d31b97d0eb4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80"
+  }
+]

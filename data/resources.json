@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "title": "AI & ML Tutorial",
+    "url": "https://www.tensorflow.org/tutorials",
+    "groupId": "ai-ml"
+  },
+  {
+    "id": "2",
+    "title": "Python for Data Science",
+    "url": "https://www.kaggle.com/learn/python",
+    "groupId": "data-science"
+  },
+  {
+    "id": "3",
+    "title": "Spring Boot Guide",
+    "url": "https://spring.io/guides",
+    "groupId": "java-microservices"
+  },
+  {
+    "id": "4",
+    "title": "React Documentation",
+    "url": "https://reactjs.org/docs",
+    "groupId": "mern-stack"
+  },
+  {
+    "id": "5",
+    "title": "Deep Learning Book",
+    "url": "https://www.deeplearningbook.org/",
+    "groupId": "ai-ml"
+  },
+  {
+    "id": "6",
+    "title": "DataCamp Tutorials",
+    "url": "https://www.datacamp.com/",
+    "groupId": "data-science"
+  },
+  {
+    "id": "7",
+    "title": "Microservices Patterns",
+    "url": "https://microservices.io/",
+    "groupId": "java-microservices"
+  },
+  {
+    "id": "8",
+    "title": "MongoDB University",
+    "url": "https://university.mongodb.com/",
+    "groupId": "mern-stack"
+  }
+]

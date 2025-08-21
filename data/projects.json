@@ -1,0 +1,38 @@
+[
+  {
+    "title": "AI Chatbot",
+    "groupId": "ai-ml",
+    "description": "A chatbot trained on college FAQs using NLP.",
+    "members": ["Rohan Mehta", "Priya Kapoor"],
+    "status": "Ongoing",
+    "github": "https://github.com/codingclub/ai-chatbot",
+    "tags": ["NLP", "Python", "TensorFlow"]
+  },
+  {
+    "title": "Sales Prediction Dashboard",
+    "groupId": "data-science",
+    "description": "A dashboard for predicting sales trends using Python and Plotly.",
+    "members": ["Ananya Roy", "Karan Patel"],
+    "status": "Completed",
+    "github": "https://github.com/codingclub/sales-prediction",
+    "tags": ["Visualization", "Python", "Plotly"]
+  },
+  {
+    "title": "E-Commerce Microservice",
+    "groupId": "java-microservices",
+    "description": "A scalable e-commerce backend built with Spring Boot and microservices.",
+    "members": ["Sneha Verma", "Rahul Sharma"],
+    "status": "Ongoing",
+    "github": "https://github.com/codingclub/ecommerce-microservice",
+    "tags": ["Spring Boot", "Java", "Microservices"]
+  },
+  {
+    "title": "Task Management App",
+    "groupId": "mern-stack",
+    "description": "A full-stack task management app with real-time updates using MERN.",
+    "members": ["Vikash Yadav", "Nisha Reddy"],
+    "status": "Completed",
+    "github": "https://github.com/codingclub/task-management",
+    "tags": ["React", "MongoDB", "Node.js"]
+  }
+]
