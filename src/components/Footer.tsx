@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Github, Linkedin, Twitter } from 'lucide-react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Github, Linkedin, Twitter } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const footerLinks = [
   { href: '/', label: 'Home' },
@@ -10,13 +10,13 @@ const footerLinks = [
   { href: '/members', label: 'Members' },
   { href: '/resources', label: 'Resources' },
   { href: '/join', label: 'Join Us' },
-]
+];
 
 const socialLinks = [
   { href: 'https://linkedin.com', icon: <Linkedin className="h-5 w-5" />, label: 'LinkedIn' },
   { href: 'https://github.com', icon: <Github className="h-5 w-5" />, label: 'GitHub' },
   { href: 'https://twitter.com', icon: <Twitter className="h-5 w-5" />, label: 'Twitter' },
-]
+];
 
 export default function Footer() {
   return (
@@ -25,23 +25,26 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.5 }}
-      className="bg-background border-t py-12"
+      className="bg-background border-t py-10 sm:py-12"
     >
-      <div className="container grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {/* About Section */}
+        <div className="text-center sm:text-left">
           <h3 className="text-lg font-heading font-semibold text-primary">Coding Club</h3>
-          <p className="mt-2 text-text/80 font-body">
+          <p className="mt-2 text-text/80 text-sm sm:text-base">
             Empowering students to explore, learn, and build in AI, Data Science, Java, and MERN.
           </p>
         </div>
-        <div>
+
+        {/* Quick Links */}
+        <div className="text-center sm:text-left">
           <h3 className="text-lg font-heading font-semibold text-primary">Quick Links</h3>
           <ul className="mt-2 space-y-2">
             {footerLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   to={link.href}
-                  className="text-text/80 hover:text-secondary transition-colors font-body"
+                  className="text-text/80 hover:text-secondary transition-colors text-sm sm:text-base"
                 >
                   {link.label}
                 </Link>
@@ -49,9 +52,11 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <div>
+
+        {/* Social Links */}
+        <div className="text-center sm:text-left">
           <h3 className="text-lg font-heading font-semibold text-primary">Connect With Us</h3>
-          <div className="mt-2 flex gap-4">
+          <div className="mt-2 flex justify-center sm:justify-start gap-4">
             {socialLinks.map((social) => (
               <a
                 key={social.href}
@@ -69,25 +74,24 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section */}
-       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 items-center gap-6">
-
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 items-center gap-4 text-center sm:text-left">
         {/* Left Side - Logo */}
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center sm:justify-start mb-2 sm:mb-0">
           <a href="/">
-            <img src="/img/logo/Footerlogo.png" alt="Godavari College Logo" className="h-12" />
+            <img src="/img/logo/Footerlogo.png" alt="Godavari College Logo" className="h-10 sm:h-12" />
           </a>
         </div>
 
         {/* Center Text */}
-        <div className="text-center text-text/80 font-body">
-         Copyright © Godavari College Of Engineering {new Date().getFullYear()}
+        <div className="text-text/80 text-sm sm:text-base">
+          © Godavari College Of Engineering {new Date().getFullYear()}
         </div>
 
         {/* Right Side - Powered By */}
-        <div className="text-center md:text-right text-text/80 font-body">
+        <div className="text-text/80 text-sm sm:text-base">
           Powered by: <span className="font-semibold text-primary">Varun Patil, 2025 Coding Club</span>
         </div>
       </div>
     </motion.footer>
-  )
+  );
 }

@@ -1,11 +1,11 @@
-import React, { useState } from "react"
-import { Send } from "lucide-react"
-import { motion } from "framer-motion"
-import groupsData from "@data/groups.json"
+import React, { useState } from "react";
+import { Send } from "lucide-react";
+import { motion } from "framer-motion";
+import groupsData from "@data/groups.json";
 
 interface Group {
-  id: string
-  name: string
+  id: string;
+  name: string;
 }
 
 export default function Join() {
@@ -14,40 +14,40 @@ export default function Join() {
     email: "",
     group: "",
     message: "",
-  })
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle")
+  });
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-      setStatus("success")
-      setFormData({ name: "", email: "", group: "", message: "" })
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      setStatus("success");
+      setFormData({ name: "", email: "", group: "", message: "" });
     } catch {
-      setStatus("error")
+      setStatus("error");
     }
-  }
+  };
 
   return (
-    <section className="min-h-screen bg-[#F8F9FA] py-16">
-      <div className="container mx-auto px-4">
+    <section className="min-h-screen bg-[#F8F9FA] py-12 sm:py-16">
+      <div className="container mx-auto px-4 sm:px-6">
         {/* Heading */}
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-bold text-[#202124] text-center"
+          className="text-3xl sm:text-4xl font-bold text-center text-[#202124]"
         >
           Join Our Coding Club
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-4 text-lg text-[#5F6368] text-center max-w-2xl mx-auto"
+          className="mt-3 sm:mt-4 text-base sm:text-lg text-center text-[#5F6368] max-w-md sm:max-w-2xl mx-auto"
         >
           Become a part of our vibrant community and start your coding journey with us.
         </motion.p>
@@ -58,14 +58,14 @@ export default function Join() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-12 max-w-xl mx-auto"
+          className="mt-10 sm:mt-12 max-w-md sm:max-w-xl mx-auto"
         >
-          <div className="bg-white border border-[#E8EAED] rounded-2xl shadow-md p-8">
-            <h3 className="text-xl font-semibold text-[#202124] mb-6">
+          <div className="bg-white border border-[#E8EAED] rounded-2xl shadow-md p-6 sm:p-8">
+            <h3 className="text-lg sm:text-xl font-semibold text-[#202124] mb-5 sm:mb-6">
               Membership Form
             </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               {/* Name */}
               <div>
                 <label
@@ -82,7 +82,7 @@ export default function Join() {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   placeholder="Enter your name"
-                  className="w-full border border-[#DADCE0] rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#4285F4] focus:outline-none text-[#202124] placeholder-[#9AA0A6]"
+                  className="w-full border border-[#DADCE0] rounded-lg px-3 sm:px-4 py-2 sm:py-3 focus:ring-2 focus:ring-[#4285F4] focus:outline-none text-[#202124] placeholder-[#9AA0A6]"
                   required
                 />
               </div>
@@ -103,7 +103,7 @@ export default function Join() {
                     setFormData({ ...formData, email: e.target.value })
                   }
                   placeholder="Enter your email"
-                  className="w-full border border-[#DADCE0] rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#4285F4] focus:outline-none text-[#202124] placeholder-[#9AA0A6]"
+                  className="w-full border border-[#DADCE0] rounded-lg px-3 sm:px-4 py-2 sm:py-3 focus:ring-2 focus:ring-[#4285F4] focus:outline-none text-[#202124] placeholder-[#9AA0A6]"
                   required
                 />
               </div>
@@ -122,7 +122,7 @@ export default function Join() {
                   onChange={(e) =>
                     setFormData({ ...formData, group: e.target.value })
                   }
-                  className="w-full border border-[#DADCE0] rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#4285F4] focus:outline-none text-[#202124]"
+                  className="w-full border border-[#DADCE0] rounded-lg px-3 sm:px-4 py-2 sm:py-3 focus:ring-2 focus:ring-[#4285F4] focus:outline-none text-[#202124]"
                 >
                   <option value="">Select a group</option>
                   {groupsData.map((group: Group) => (
@@ -148,15 +148,15 @@ export default function Join() {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   placeholder="Tell us about yourself"
-                  className="w-full border border-[#DADCE0] rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#4285F4] focus:outline-none text-[#202124] placeholder-[#9AA0A6]"
-                  rows={3}
+                  className="w-full border border-[#DADCE0] rounded-lg px-3 sm:px-4 py-2 sm:py-3 focus:ring-2 focus:ring-[#4285F4] focus:outline-none text-[#202124] placeholder-[#9AA0A6]"
+                  rows={4}
                 />
               </div>
 
               {/* Submit Button */}
               <button
                 type="submit"
-                className="flex items-center justify-center gap-2 bg-[#4285F4] text-white font-medium py-3 px-4 rounded-lg shadow hover:bg-[#3367D6] transition w-full"
+                className="w-full flex items-center justify-center gap-2 bg-[#4285F4] text-white font-medium py-3 sm:py-4 px-4 rounded-lg shadow hover:bg-[#3367D6] transition"
               >
                 Submit <Send className="h-4 w-4" />
               </button>
@@ -165,7 +165,7 @@ export default function Join() {
             {/* Status Messages */}
             {status === "success" && (
               <motion.div
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 5 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 className="mt-4 text-green-600"
@@ -175,7 +175,7 @@ export default function Join() {
             )}
             {status === "error" && (
               <motion.div
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 5 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
                 className="mt-4 text-red-600"
@@ -187,5 +187,5 @@ export default function Join() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
